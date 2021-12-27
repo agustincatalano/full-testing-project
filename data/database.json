@@ -21,7 +21,7 @@
       "firstName": "Agustin",
       "lastName": "Catalano",
       "username": "acatalano",
-      "password": "$2a$10$5PXHGtcsckWtAprT5/JmluhR13f16BL8SIGhvAKNP.Dhxkt69FfzW",
+      "password": "$2a$12$u.eu8WeIveRTdaqVmICvQuWiXM9EOE3lhTA3mPHeVe/gyn/NGUzhS",
       "email": "agustin@catalano.com",
       "phoneNumber": "625-316-9882",
       "avatar": "https://cypress-realworld-app-svgs.s3.amazonaws.com/t45AiwidW.svg",
@@ -268,17 +268,6 @@
       "isDeleted": false,
       "createdAt": "2019-09-30T14:20:07.043Z",
       "modifiedAt": "2020-05-21T22:40:28.910Z"
-    },
-    {
-      "id": "r_VyWv8vj",
-      "uuid": "32f9870e-684e-4eff-bc11-37180f7fa5e0",
-      "userId": "t45AiwixA",
-      "bankName": "my bank",
-      "accountNumber": "4353534533",
-      "routingNumber": "123456789",
-      "isDeleted": false,
-      "createdAt": "2021-12-23T19:06:11.411Z",
-      "modifiedAt": "2021-12-23T19:06:11.411Z"
     }
   ],
   "transactions": [
