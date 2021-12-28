@@ -93,7 +93,7 @@
     "dotenv": "10.0.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-cypress": "2.11.3",
-    "eslint-plugin-prettier": "3.4.0",
+    "eslint-plugin-prettier": "4.0.0",
     "express-graphql": "0.12.0",
     "express-jwt": "6.0.0",
     "express-paginate": "1.0.2",
@@ -190,6 +190,10 @@
       "cypress",
       "prettier"
     ],
+    "prettier": {
+      "singleQuote": true,
+       "semi": false
+    },
     "rules": {
       "no-unused-expressions": 0
     }
