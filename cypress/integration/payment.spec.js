@@ -1,20 +1,28 @@
-import asd from "../../data/database.json";
-const myUserName = asd.users[1].username;
+import database from "../../data/database.json";
+const myUserName = database.users[1].username;
 
 const usernameSelector = "#username";
 const passwordSelector = "#password";
 const signInButtonSelector = "button:contains('Sign In')";
 const userFullNameSelector = "[data-test='sidenav-user-full-name']";
 
+const accountName = "Agustin C";
+const password = "test1234";
+
 beforeEach(() => {
   cy.visit("/");
 });
 
 describe("Log In", () => {
-  it('returns "fizz" when number is multiple of 3', () => {
+  it("Log In", () => {
+    cy.get("div > svg")
+      .should("have.attr", "width", "235px")
+      .should("have.attr", "height", "28px");
     cy.get(usernameSelector).type(myUserName);
-    cy.get(passwordSelector).type("test1234");
+    cy.get(signInButtonSelector).should("be.disabled");
+    cy.get(passwordSelector).type(password);
+    cy.get(signInButtonSelector).should("be.enabled");
     cy.get(signInButtonSelector).click();
-    cy.get(userFullNameSelector).contains("Agustin C");
+    cy.get(userFullNameSelector).contains(accountName);
   });
 });
